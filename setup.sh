@@ -1,10 +1,6 @@
 #!/bin/bash
 
-pacman -S git sfdisk
-
-git clone $REPO
-
-cd archsetupz``
+pacman -S  sfdisk
 cfdisk /dev/sda
 cfdisk /dev/sdb
 mkfs.fat -F32 /dev/sda1
@@ -39,9 +35,9 @@ systemctl enable NetworkManager lightdm
 
 echo "SET ROOT PASSWD"
 passwd
-useradd -m $USER -G wheel,audio,video,optical,storage
+useradd -m sai0-0 -G wheel,audio,video,optical,storage
 echo "SET USER PASSWD"
-passwd $USER
+passwd $sai0-0
 exit
 EOT
 
