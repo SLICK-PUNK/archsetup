@@ -19,7 +19,7 @@ ln -sf /usr/share/zoneinfo/ASIA/KOLKATA /etc/localtime
 hwclock --systohc
 printf "[multilib]\nInclude = /etc/pacman.d/mirrorlist"
 pacman  --noconfirm -Syu 
-pacman --noconfirm -S nano qtile git networkmanager xorg polybar lightdm xf86-video-intel grub efibootmgr dosfstools os-prober mtools 
+pacman --noconfirm -S nano qtile git networkmanager brave xorg polybar lightdm xf86-video-intel grub efibootmgr dosfstools os-prober mtools 
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
